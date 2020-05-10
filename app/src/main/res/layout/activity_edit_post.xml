@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        app:title=" "
+        android:elevation="1dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="12dp"
+            android:tint="@color/colorBlack"
+            android:onClick="cancelEdit"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Edit Post"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="6dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:textSize="15sp"
+                android:id="@+id/txtDescEditPost"
+                android:padding="8dp"
+                android:background="@drawable/txt_background"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Save"
+                android:id="@+id/btnEditPost"
+                android:background="@drawable/btn_round"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                android:textAllCaps="false"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="" android:id="@+id/item_home"
+        app:showAsAction="always" android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item android:title="" android:id="@+id/item_null"
+        app:showAsAction="always" />
+
+    <item android:title="" android:id="@+id/item_account"
+        app:showAsAction="always" android:icon="@drawable/ic_person_outline_black_24dp"/>
+
+</menu>
